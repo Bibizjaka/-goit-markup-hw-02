@@ -20,7 +20,8 @@ body {
   color: var(--main-text-color);
 
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -39,7 +40,6 @@ body {
   color: var(--accent-color);
 }
 .logo-web,
-.logo-web-footer,
 .logo-studio {
   color: var(--accent-color);
 
@@ -53,7 +53,7 @@ body {
 .logo-studio {
   color: black;
 }
-.nav-list,
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -74,11 +74,14 @@ body {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
+/* Index.html */
 /* Герой */
 .hero,
 .footer {
   background-color: var(--hero-footer-color);
 }
+
 .hero-title {
   color: white;
 
@@ -89,12 +92,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* Кнопки */
 .hero-button {
   background-color: var(--accent-color);
   color: #ffffff;
+
   cursor: pointer;
-  /* додав font family бо інакше браузер сатвить Ariel */
-  font-family: 'Roboto', sans-serif;
+
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -104,6 +109,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+
 /* Особенности */
 .hidden-title {
   display: none;
@@ -139,7 +145,6 @@ body {
   letter-spacing: 0.03em;
 }
 .employee-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -162,7 +167,6 @@ body {
 .footer-address {
   color: #fff;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -170,11 +174,49 @@ body {
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .footer-contacts:hover {
   color: #fff;
+}
+.footer-contacts:focus {
+  color: #fff;
+}
+/*  Portfolio.html */
+/* Кнопки Portfolio */
+.portfolio-button {
+  background: var(--team-background-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.portfolio-projects-title {
+  color: var(--title-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.9;
+
+  letter-spacing: 0.03em;
 }
